@@ -1,5 +1,4 @@
 import java.sql.SQLOutput;
-import java.util.Scanner;
 /**
  * A program to carry on conversations with a human user.
  * This is the initial version that:  
@@ -14,7 +13,6 @@ import java.util.Scanner;
  */
 public class Magpie2
 {
-	Scanner input = new Scanner(System.in);
 	/**
 	 * Get a default greeting 	
 	 * @return a greeting
@@ -35,7 +33,7 @@ public class Magpie2
 	{
 		String response = "";
 		response = response.trim();
-		if (statement.indexOf("no") >= 0)
+		if (statement.indexOf("no") >= 0 || (statement.indexOf("No") >=0))
 		{
 			response = "Why so negative?";
 		}
@@ -58,9 +56,9 @@ public class Magpie2
 		{
 			response = "My name is Timmy.";
 		}
-		else if (statement.indexOf("Mr.") >=0 || (statement.indexOf("Mrs.")) >=0)
+		else if (statement.indexOf("Mr.") >=0 || (statement.indexOf("Mrs.")) >=0 || statement.indexOf("mr.") >=0 || statement.indexOf("mrs.") >=0)
 		{
-			response = "He sounds like a good teacher.";
+			response = "They sounds like a good teacher.";
 		}
 		else if (statement.indexOf("yes") >=0 || (statement.indexOf("yep")) >=0)
 		{
@@ -94,7 +92,14 @@ public class Magpie2
 		{
 			response = "Indeed it is very interesting";
 		}
-
+		else if (statement.indexOf("Thanks") >=0 || (statement.indexOf("Thanks you")) >=0 || (statement.indexOf("thanks") >=0 || (statement.indexOf("thank you")) >=0))
+		{
+			response = "Your welcome";
+		}
+		else if (statement.indexOf("What you doing") >=0 || (statement.indexOf("Wyd")) >=0 || (statement.indexOf("what you doing") >=0 || (statement.indexOf("wyd")) >=0))
+		{
+			response = "Talking to you";
+		}
 		return response;
 	}
 
@@ -104,7 +109,7 @@ public class Magpie2
 	 */
 	private String getRandomResponse()
 	{
-		final int NUMBER_OF_RESPONSES = 9;
+		final int NUMBER_OF_RESPONSES = 10;
 		double r = Math.random();
 		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
 		String response = "";
@@ -148,6 +153,18 @@ public class Magpie2
 		else if (whichResponse == 9)
 		{
 			response = "What is your favorite animal?";
+		}
+		else if (whichResponse == 10)
+		{
+			response = "Do you have a dog?";
+		}
+		else if (whichResponse == 11)
+		{
+			response = "Hmmmmm";
+		}
+		else if (whichResponse == 12)
+		{
+			response = "Intriguing";
 		}
 		return response;
 	}
