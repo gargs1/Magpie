@@ -54,7 +54,7 @@ public class Magpie2
 		}
 
 		else if(statement.indexOf("yes") >= 0) {
-			response = "Nice!";
+			response = "Nice, that's cool!";
 		}
 		else
 		{
