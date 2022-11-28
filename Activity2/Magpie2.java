@@ -160,7 +160,7 @@ public class Magpie2
 		}
 		else if (whichResponse == 11)
 		{
-			response = "Hmmmmm";
+			response = "Wow...";
 		}
 		else if (whichResponse == 12)
 		{
