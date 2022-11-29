@@ -44,10 +44,28 @@ public class Magpie2
 		{
 			response = "Tell me more about your family.";
 		}
+
+		else if(statement.indexOf("dog") >= 0 || statement.indexOf("cat") >= 0) {
+			response = "Tell me more about your pet";
+		}
+		else if(statement.indexOf("hobbies") >= 0 || statement.indexOf("hobby") >= 0) {
+			response = "I would like to know more about hobbies you are interested in";
+		}
+		else if(statement.indexOf("no") >= 0) {
+			response = "Ok, that's fine.";
+		}
+		else if(statement.indexOf("like") >= 0) {
+			response = "Me too!";
+		}
+
+		else if(statement.indexOf("yes") >= 0) {
+			response = "Nice, that's cool!";
+		}
 		else
 		{
 			response = getRandomResponse();
 		}
+
 		if (statement.indexOf("Hello") >=0 || (statement.indexOf("Hey")) >=0 || (statement.indexOf("hello")) >=0 || (statement.indexOf("hey")) >=0)
 		{
 			response = "What is your name?";
@@ -108,8 +126,13 @@ public class Magpie2
 		{
 			response = "Talking to you";
 		}
-		return response;
+    return response;
 	}
+
+
+
+
+
 
 	/**
 	 * Pick a default response to use if nothing else fits.
