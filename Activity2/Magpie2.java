@@ -61,7 +61,21 @@ public class Magpie2
 		else if(statement.indexOf("yes") >= 0) {
 			response = "Nice, that's cool!";
 		}
-		else
+		else if(statement.indexOf("school") >= 0 || statement.indexOf("School") >= 0) {
+			response = "What grade are you in?";
+		}
+		else if(statement.indexOf("grade") >= 0) {
+			response = "Ok, what is your favorite class?";
+		}
+		else if(statement.indexOf("math") >= 0) {
+			response = "I'm not very good at math";
+		}
+		else if(statement.indexOf("english") >=0 || statement.indexOf("English") >= 0) {
+			response = "I know how to write very well";
+		}
+		else if(statement.indexOf("Bye") >= 0 || statement.indexOf("bye") >=0) {
+			response = "Bye, it was nice talking to you!";
+		}
 		{
 			response = getRandomResponse();
 		}
