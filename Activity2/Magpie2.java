@@ -46,6 +46,9 @@ public class Magpie2
 		else if(statement.indexOf("dog") >= 0 || statement.indexOf("cat") >= 0) {
 			response = "Tell me more about your pet";
 		}
+		else if(statement.indexOf("hobbies") >= 0 || statement.indexOf("hobby") >= 0) {
+			response = "I would like to know more about hobbies you are interested in";
+		}
 		else if(statement.indexOf("no") >= 0) {
 			response = "Ok, that's fine.";
 		}
