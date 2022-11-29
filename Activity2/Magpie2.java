@@ -37,7 +37,7 @@ public class Magpie2
 		{
 			response = "Why so negative?";
 		}
-		else if (statement.indexOf("mother") >= 0
+		else if (statement.indexOf("mother") >= 0//To Prioritize it you will put it higher up in the code.
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
 				|| statement.indexOf("brother") >= 0)
@@ -59,6 +59,14 @@ public class Magpie2
 		else if (statement.indexOf("Mr.") >=0 || (statement.indexOf("Mrs.")) >=0 || statement.indexOf("mr.") >=0 || statement.indexOf("mrs.") >=0)
 		{
 			response = "They sounds like a good teacher.";
+		}
+		else if (statement.indexOf("dog") >=0 || (statement.indexOf("Dog")) >=0)//To prioritize this you will move it up above mom line.
+		{
+			response = "What kind of dog?";
+		}
+		else if (statement.indexOf("cat") >=0 || (statement.indexOf("Cat")) >=0)
+		{
+			response = "What kind of cat?";
 		}
 		else if (statement.indexOf("yes") >=0 || (statement.indexOf("yep")) >=0)
 		{
