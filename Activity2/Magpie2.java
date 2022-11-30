@@ -44,11 +44,7 @@ public class Magpie2
 		{
 			response = "Tell me more about your family.";
 		}
-		else
-		{
-			response = getRandomResponse();
-		}
-		if (statement.indexOf("Hello") >=0 || (statement.indexOf("Hey")) >=0 || (statement.indexOf("hello")) >=0 || (statement.indexOf("hey")) >=0)
+		else if (statement.indexOf("Hello") >=0 || (statement.indexOf("Hey")) >=0 || (statement.indexOf("hello")) >=0 || (statement.indexOf("hey")) >=0)
 		{
 			response = "What is your name?";
 		}
@@ -107,6 +103,10 @@ public class Magpie2
 		else if (statement.indexOf("What you doing") >=0 || (statement.indexOf("Wyd")) >=0 || (statement.indexOf("what you doing") >=0 || (statement.indexOf("wyd")) >=0))
 		{
 			response = "Talking to you";
+		}
+		else
+		{
+			response = getRandomResponse();
 		}
 		return response;
 	}
