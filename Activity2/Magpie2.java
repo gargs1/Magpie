@@ -174,6 +174,18 @@ public class Magpie2
 		{
 			response = "Intriguing";
 		}
+		else if(whichResponse == 13) {
+			response = "I've never thought about it like that";
+		}
+		else if(whichResponse == 14) {
+			response = "Ok...";
+		}
+		else if(whichResponse == 15) {
+			response = "Sounds good";
+		}
+		else if(whichResponse == 16) {
+			response = "I haven't given that much thought, that's interesting";
+		}
 		return response;
 	}
 }
